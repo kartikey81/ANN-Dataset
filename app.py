@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 app = Flask(__name__)
 from keras.models import load_model
-model = load_model('')
+model = load_model('churnmodelANN.h5')
 # Importing the dataset
 dataset = pd.read_csv('Churn_Modelling.csv')
 # Extracting dependent and independent variables:
